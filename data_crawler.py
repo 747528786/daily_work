@@ -15,10 +15,10 @@ class Yjs:
     def __init__(self):
         self.cookies = {
             '_font_size_ratio_': '1.0',
-            'sid': '8d6e9e3baeca7902f49ed46d6a31d394',
+            'sid': 'xxx',
             'access_token_expiresin': '3600',
-            'access_token': '8d6e9e3baeca7902f49ed46d6a31d394',
-            'refresh_token': 'b715e58aba0bf7c4e655f34877ab6e95',
+            'access_token': 'xxx',
+            'refresh_token': 'xxx',
         }
 
         self.headers = {
@@ -27,8 +27,8 @@ class Yjs:
             'Connection': 'keep-alive',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             # 'Cookie': '_font_size_ratio_=1.0; sid=8d6e9e3baeca7902f49ed46d6a31d394; access_token_expiresin=3600; access_token=8d6e9e3baeca7902f49ed46d6a31d394; refresh_token=b715e58aba0bf7c4e655f34877ab6e95',
-            'Origin': 'http://172.26.199.170:81',
-            'Referer': 'http://172.26.199.170:81/epoint-zwfwbase-project-web/jsproject/onethingyicibantj/one_thing/index?isopen=0',
+            'Origin': 'http://000.00.00.00',
+            'Referer': 'http://000.00.00.00:81/epoint-zwfwbase-project-web/jsproject/onethingyicibantj/one_thing/index?isopen=0',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36',
             'User-Token': 'userSign=953E92E41BADAC1D82B2ECB2A23EF0999FFFB632079ADF7B566425ADB44876E6,reqTime=1730092436292,deviceId=f9db48942e46ea81adfea2c5e9404981,title=%E4%B8%80%E4%BB%B6%E4%BA%8B%E5%8A%9E%E4%BB%B6%E7%BB%9F%E8%AE%A1',
             'X-Requested-With': 'XMLHttpRequest',
@@ -42,7 +42,7 @@ class Yjs:
     def get_data(self, area_code, area_name):
         data = {
             'commonDto': '[{"id":"datagrid","type":"datagrid","action":"getDataGridData","name":"","idField":"id","pageIndex":0,"sortField":"","sortOrder":"","columns":[{"fieldName":"onethingname"},{"fieldName":"scenetype","code":"场景类型"},{"fieldName":"serviceobject","code":"服务对象"},{"fieldName":"rowguid"},{"fieldName":"onethingtype"},{"fieldName":"totalcount"},{"fieldName":"istysl"},{"fieldName":"ouname"},{"fieldName":"promotecitycount"},{"fieldName":"ybjl"},{"fieldName":"selfmadecitycount"},{"fieldName":"selfmadecity"}],"pageSize":-1,"url":"getDataGridData","data":[]},{"id":"areaCode","bind":"area","type":"combobox","action":"getAreacode","name":"","pinyinField":"tag","columns":[],"textField":"text","valueField":"id","value":"' + area_code + '","text":"' + area_name + '"},{"id":"dateFirst","bind":"time","type":"combobox","action":"getTimeType","name":"","pinyinField":"tag","columns":[],"textField":"text","valueField":"id","value":"year","text":"本年"},{"id":"sceneName","bind":"onethingname","type":"textbox","action":"","name":"","value":"","text":""},{"id":"source","bind":"source","type":"combobox","action":"","name":"source","pinyinField":"tag","columns":[],"textField":"text","valueField":"id","value":"all","text":"全部"},{"id":"dataexport","type":"dataexport","action":"getExportModel","name":"","mapClass":"com.epoint.basic.faces.export.DataExport","exportAction":"","text":"导出"},{"id":"_common_hidden_viewdata","type":"hidden","value":"{\\"epoint_user_loginid\\":\\"953E92E41BADAC1D82B2ECB2A23EF0999FFFB632079ADF7B566425ADB44876E6\\",\\"pageurl\\":\\"923d724527d63404952bd04250b22d8a50174ba998e101f90c76c16a65e99127972981051e244c59cad7c38ba698cc84a32918e9f30de9ed88ac72d86cbf84a5\\"}"}]',
-            'cmdParams': '{"pageUrl":"http://172.26.199.170:81/epoint-zwfwbase-project-web/jsproject/onethingyicibantj/one_thing/index?isopen=0"}',
+            'cmdParams': '{"pageUrl":"http:/000.00.00.00:81/epoint-zwfwbase-project-web/jsproject/onethingyicibantj/one_thing/index?isopen=0"}',
             'replaynoticeid': '26122AC6-4A23-4B13-B986-90BD73ADEBE9',
             'reqtime': '1730092436247',
             'paramsign': '3B399521DC7E277CD6D65A9719BA15FD4C56C70577F8242E2A3284F1CF24963B',
@@ -50,7 +50,7 @@ class Yjs:
         }
 
         response = requests.post(
-            'http://172.26.199.170:81/epoint-zwfwbase-project-web/rest/anascenebuildingsituationaction/page_Refresh',
+            'http://000.00.00.00:81/epoint-zwfwbase-project-web/rest/anascenebuildingsituationaction/page_Refresh',
             params=self.params,
             cookies=self.cookies,
             headers=self.headers,
